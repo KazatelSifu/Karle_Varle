@@ -1,0 +1,1 @@
+export { VuesaxBoldEye } from "./VuesaxBoldEye";

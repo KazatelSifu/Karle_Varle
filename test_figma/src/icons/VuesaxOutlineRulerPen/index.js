@@ -1,0 +1,1 @@
+export { VuesaxOutlineRulerPen } from "./VuesaxOutlineRulerPen";

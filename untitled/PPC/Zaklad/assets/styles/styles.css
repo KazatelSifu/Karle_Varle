@@ -1,0 +1,130 @@
+h1
+{
+    color:red;
+    font-size: 100px;
+}
+h2
+{
+    /*
+    Toto je komentář
+     */
+    text-decoration: underline;
+}
+h3
+{
+    text-align: center;
+}
+.specialni-odstavec
+{
+
+    color: red;
+    font-size: 18px;
+    text-align: justify ;
+    width: fit-content;
+}
+.main-section
+{
+    color: yellow;
+    background-color: blue;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+nav > ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+
+}
+nav > ul >li
+{
+    display: inline;
+    border: 1px solid black ;
+}
+.trida
+{
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+}
+
+.container
+{
+    max-width: 900px;
+    margin: auto;
+    min-height: calc(100vh - 55px);
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding:6px 20px;
+}
+tr th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding:6px 20px;
+    background-color: #ad1e23;
+    color:#fff;
+}
+.obchodnik
+{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+table
+{
+    margin-bottom: 150px;
+}
+tr:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    color: Red;
+}
+.footer
+{
+    margin-top: 50px;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 0;
+    padding: 1rem;
+}
+.buttons
+{
+    text-align: center;
+}
+section.login, .login-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.form-group
+{
+    margin-bottom: 5px;
+}
+
+
+.login-form
+{
+    width: 50%;
+}
+
+.form-group, .form-check
+{
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.form-group *
+{
+    width: 100%;
+}

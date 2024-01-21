@@ -1,0 +1,1 @@
+export { VuesaxBoldSms } from "./VuesaxBoldSms";

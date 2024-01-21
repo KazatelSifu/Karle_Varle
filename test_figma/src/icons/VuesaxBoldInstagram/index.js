@@ -1,0 +1,1 @@
+export { VuesaxBoldInstagram } from "./VuesaxBoldInstagram";

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Test_Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="Zaklad.html">Domov</a>
+                <a class="nav-link active" href="#">Login</a>
+                <a class="nav-link" href="treti.html">Treti</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <section class="login">
+        <h1>Prosím přihlašte se</h1>
+        <div class="login-form">
+            <div class="form-group">
+                <label for="form-email">Email:</label>
+                <input class="form-control" type="email" placeholder="Email....." name="email" id="form-email">
+            </div>
+            <div class="form-group">
+                <label for="form-password">Heslo:</label>
+                <input class="form-control" type="password" placeholder="Heslo....." name="email" id="form-password">
+            </div>
+
+            <div class="form-group">
+                <label for="form-provider-selection">Poskytovatel :</label>
+                <select class="form-select" name="provider-selection" id="form-provider-selection">
+                    <option value="0">ahoj</option>
+                    <option value="1">čus</option>
+                    <option value="2" selected>zdar</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <div class="row">
+                    <div class="col-sm">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option2">
+                        <label class="form-check-label" for="gridRadios1">
+                            Host
+                        </label>
+                    </div>
+                    <div class="col-sm">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Admin
+                        </label>
+                    </div>
+                    <div class="col-sm">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                            anonymní
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+                <div class="form-group">
+                    <label for="form-name">Jméno:</label>
+                    <input class="form-control" type="text" name="name" id="form-name">
+                </div>
+                <div class="form-group">
+                    <label for="form-name">Jméno:</label>
+                    <textarea class="form-control" id="form-message" name="form-message">TEST</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="form-file">Soubor:</label>
+                    <input class="form-control" type="file" id="form-file" name="form-rememberme">
+                </div>
+                <div class="form-group mt-3">
+                    <button type="button" class="btn btn-primary" onclick="dataChecking()">Uložit</button>
+                </div>
+                <div class="form-group">
+                    <button types="button" id="verificationButton" onclick="je_to_jedno();">Přihlásit se</button>
+                </div>
+        </div>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script>
+    function je_to_jedno() {
+        const email = document.getElementById("form-email").value;
+        const password = document.getElementById("form-password").value;
+
+
+        const adminEmail = "email";
+        const adminPassword = "heslo";
+
+        if (email == adminEmail && password == adminPassword) {
+            console.log("Přihlášen");
+        } else {
+            console.log("Špatné heslo nebo email")
+        }
+    }
+</script>
+LOGIN PAGE
+</body>
+</html>

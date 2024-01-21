@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/styles/uvod.css" rel="stylesheet">
+
+    <style>
+        .carousel-item {
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
+</head>
+<body>
+<div class="container-">
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div id="mySidenav" class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 ">
+                    <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Domov</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Petr_Kvapil.html" class="active" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Petr Kvapil</span> </a>
+
+                        </li>
+                        <li>
+                            <a href="Petr_Zacharias.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Petr Zachariáš</span> </a>
+
+                        </li>
+                        <li>
+                            <a href="Jiri_Kvapil.html" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Jiří Kvapil</span></a>
+
+                        </li>
+                        <li>
+                            <a href="Formular.html" target="_blank" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline"> Formulář</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col py-3">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/obrazek_1.jpg" class="d-block w-100" alt="První obrázek">
+                            <div class="carousel-caption">
+                                <h1 class="text-center">Vítejte na naší stránce!</h1>
+                                <p class="text-center">Zde se dozvíte spoustu informací ohledně mojí rodiny.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obrazek_2.jpg" class="d-block w-100" alt="Druhý obrázek">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obrazek_3.jpg" class="d-block w-100" alt="Třetí obrázek">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script>
+    // Aktualizace velikosti obrázků při načtení a změně velikosti okna
+    window.addEventListener('load', updateImageSize);
+    window.addEventListener('resize', updateImageSize);
+
+    function updateImageSize() {
+        var carouselItems = document.querySelectorAll('.carousel-item');
+        carouselItems.forEach(function (item) {
+            var img = item.querySelector('img');
+            img.style.height = window.innerHeight + 'px';
+        });
+    }
+</script>
+
+</body>
+</html>

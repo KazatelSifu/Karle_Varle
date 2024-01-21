@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+
+header {
+    background-color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Main content styles */
+
+section {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -20px;
+}
+
+.product {
+    width: calc(33.33% - 40px);
+    margin: 0 20px 40px;
+}
+
+.product img {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.review {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.review img {
+    float: left;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.review h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.review p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.rating .stars {
+    color: #FFC107;
+    margin-right: 10px;
+}
+
+.rating .user {
+    font-style: italic;
+}
+
+.expert {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.expert img {
+    float: left;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.expert h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.expert p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-size: 18px;
+    font-style: italic;
+}
+.footer
+{
+    margin-top: 50px;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: Black;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 0;
+    padding: 1rem;
+
+}
+#mySidenav {
+    position: fixed;
+}
+

@@ -1,0 +1,1 @@
+export { VuesaxJavascript } from "./VuesaxJavascript";

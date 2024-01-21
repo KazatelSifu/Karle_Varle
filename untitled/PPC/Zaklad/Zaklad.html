@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <title>WEB DESIGN BIATCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/styles/styles.css" rel="stylesheet">
+
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Test_Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Domov</a>
+                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="treti.html">Treti</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Ahoj</h1>
+            <h2>já jenom já</h2>
+            <h3>jsem</h3>
+            <h4>Petr</h4>
+
+            <p>TEXT</p>
+            <p>TEXT</p>
+        </div>
+        <p class="specialni-odstavec">
+            <b>Tohle je</b>
+            <i>Bezvadný</i>
+            <u>Web</u>
+            <a href="https://viktorvrablik.cz/" target="_blank">Notion ,ze kterého se učím</a>
+
+        <div>
+            <img src="assets/img/fufu.png" width="273px" height="313px" alt="fufu obrázek">
+        </div>
+        </p>
+
+    </div>
+
+    <hr>
+    <section class="main-section">
+        SEKCE
+
+        <ol>
+            <li>první</li>
+            <li>druhý</li>
+            <li>třetí</li>
+        </ol>
+    </section>
+    <br>
+    <hr>
+    <article>
+        ARTIKL
+    </article>
+        <div id="mapa" style="width:600px; height:400px;"></div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/hah.jpg" class="d-block w-100" alt="První obrázek">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/hah2.jpg" class="d-block w-100" alt="Druhý obrázek">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/hah3.jpg" class="d-block w-100" alt="Třetí obrázek">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <h1 class="obchodnik">Obchodník</h1>
+        <table class="trida">
+            <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+            </tfoot>
+        </table>
+        <section class="buttons">
+            <p>Počet Eur, který mi dluží G2A za propagaci: <span id="counter1">0</span></p>
+            <button types="button" id="mybutton" onclick="pricti();">Pricti +1</button>
+            <button types="button" id="mybutton2" onclick="reset();">Resetni na 0</button>
+            <button types="button" id="mybutton3" onclick="odecti();">Odecteni -1</button>
+        </section>
+    </div>
+</div>
+<footer class="footer">
+    <p>Author : Petr Zachariáš</p>
+    <p>pitr.zach@post.cz</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+var stred = SMap.Coords.fromWGS84(17.6957158, 49.2271397);
+var mapa = new SMap(JAK.gel("mapa"), stred, 16);
+mapa.addDefaultLayer(SMap.DEF_BASE).enable();
+mapa.addDefaultControls();
+
+var layer = new SMap.Layer.Marker();
+mapa.addLayer(layer);
+layer.enable();
+
+var options = {};
+var marker = new SMap.Marker(stred, "myMarker", options);
+layer.addMarker(marker);
+
+</script>
+<script>
+    let index = 0;
+
+    function pricti() {
+        index++;
+        const el = document.getElementById("counter1");
+        el.innerText = index;
+        console.log("Můj index = " + index)
+    }
+
+    function reset() {
+        index = 0;
+        const el = document.getElementById("counter1");
+        el.innerText = index;
+        console.log("Můj index = " + index)
+    }
+
+    function odecti() {
+        index--;
+        const el = document.getElementById("counter1");
+        el.innerText = index;
+        console.log("Můj index = " + index)
+    }
+</script>
+
+<!--
+1) 5 pod stránek (minimálně 5)
+2) navigace, sidebar, patička, obsah, accessability
+3) img, galerie, tabulka, správná struktura(h1,h2,h3), formulář, mapa
+4) asynchronní načítání .json/.xml souboru
+5) knihovny: Boodstap 5, JQvery 3.2.1
+6) vlastní .css a us soubory
+7) jeden motiv
+8) jedno téma
+9) reaktivní prvky
+10) STANDARDIZACE
+-->
+<!--THIS IS COMMENT 2 -->
+</body>
+</html>

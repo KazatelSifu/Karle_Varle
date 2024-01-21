@@ -1,0 +1,1 @@
+export { VuesaxBoldUser } from "./VuesaxBoldUser";

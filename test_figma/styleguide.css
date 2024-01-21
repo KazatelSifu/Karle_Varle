@@ -1,0 +1,8 @@
+:root {
+  --dark-colour: rgba(0, 0, 54, 1);
+  --light-colour: rgba(245, 245, 245, 1);
+  --low-priority: rgba(132, 129, 145, 1);
+  --primary-colour: rgba(117, 98, 224, 1);
+  --secondary-colour: rgba(40, 33, 98, 1);
+  --white: rgba(255, 255, 255, 1);
+}
