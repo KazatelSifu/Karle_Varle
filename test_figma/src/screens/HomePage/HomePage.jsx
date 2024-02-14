@@ -73,12 +73,12 @@ export const HomePage = () => {
           <div className="text-wrapper-19">Petr Zachariáš</div>
           <div className="navbar-2">
             <ul className="menu-list">
-            <div className="text-wrapper-20"><li><a href="#section1">Domů</a></li></div>
-            <div className="text-wrapper-21"><li><a href="#section2">O mně</a></li></div>
-            <div className="text-wrapper-21"><li><a href="#section3">Portfolio</a></li></div>
-            <div className="text-wrapper-21"><li><a href="#section4">Servis</a></li></div>
-            <div className="text-wrapper-21"><li><a href="#section5">Kontakt</a></li></div>
-            <div className="text-wrapper-21"><li><a href="#section6">Reference</a></li></div>
+              <div className="text-wrapper-20"><li><a href="#section1">Domů</a></li></div>
+              <div className="text-wrapper-21"><li><a href="#section2">O mně</a></li></div>
+              <div className="text-wrapper-21"><li><a href="#section3">Portfolio</a></li></div>
+              <div className="text-wrapper-21"><li><a href="#section4">Servis</a></li></div>
+              <div className="text-wrapper-21"><li><a href="#section5">Kontakt</a></li></div>
+              <div className="text-wrapper-21"><li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Reference</a></li></div>
               </ul>
             </div>
 
